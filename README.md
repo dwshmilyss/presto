@@ -25,7 +25,7 @@ On the first build, Maven will download all the dependencies from the internet a
 
 Presto has a comprehensive set of unit tests that can take several minutes to run. You can disable the tests when building:
 
-    ./mvnw clean install -DskipTests
+    ./mvnw clean install -DskipTests -Dair.check.skip-dependency=true -Dair.check.skip-duplicate-finder=true
 
 ## Running Presto in your IDE
 
